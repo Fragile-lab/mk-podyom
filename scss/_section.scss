@@ -1,0 +1,110 @@
+//header and footer
+.section {
+    width: 100%;
+
+    &__header {
+        height: 100%;
+        width: 100%;
+        padding: 0 10px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(5, auto);
+    }
+
+    &__button {
+        padding: 49px 0 52px 0;
+    }
+
+    &__email {
+        padding: 47px 0 49px 0;
+
+        & .email {
+            color: #000;
+            cursor: pointer;
+            white-space: nowrap;
+        }
+    }
+
+    &__image {
+        cursor: inherit;
+
+        & a {
+            cursor: pointer;
+            display: block;
+            width: 183px;
+
+            & img {
+                pointer-events: none;
+                width: 100%;
+            }
+        }
+    }
+
+    //соц.сети
+    &__soc-media {
+        padding: 35px 0 39px 0;
+
+        & .social-elements {
+            display: inline-block;
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            overflow: hidden;
+            cursor: pointer;
+
+            & svg {
+                pointer-events: none;
+            }
+        }
+    }
+
+    &__whatsapp {
+        & .whatsapp-circle {
+            transition: all 0.15s ease-in;
+            fill: #58C549;
+        }
+
+        & .whatsapp-path {
+            fill: #fff;
+        }
+
+        &:hover {
+            .whatsapp-circle {
+                fill: #4caa3f;
+            }
+        }
+    }
+
+    &__telegram {
+        & .telegram-circle {
+            transition: all 0.15s ease-in;
+            fill: #039BE5;
+        }
+
+        & .telegram-path {
+            fill: #fff;
+        }
+
+        &:hover {
+            .telegram-circle {
+                fill: #007fbe;
+            }
+        }
+    }
+
+    &__contacts {
+        padding: 31px 0 35px 0;
+        display: grid;
+    }
+
+    &__number {
+        color: #000;
+        cursor: pointer;
+        white-space: nowrap;
+    }
+
+    &__callme {
+        cursor: pointer;
+        white-space: nowrap;
+    }
+}

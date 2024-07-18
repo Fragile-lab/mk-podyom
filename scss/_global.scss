@@ -1,0 +1,120 @@
+//global
+html,
+body {
+    min-width: 375px;
+    width: 100%;
+    height: 100%;
+    font-family: "Onest";
+}
+
+//h1 главный тайтл
+.section__main-title {
+    font-size: 60px;
+}
+
+//h2 тайтлы блоков
+.section__title {
+    font-size: 48px;
+}
+
+//h3 тайтл форм
+.section-form-title {
+    font-size: 40px;
+}
+
+//h4 мейн тайтл карточек
+.section__card-title {
+    font-size: 38px;
+}
+
+//h5 после главного тайтла
+.section__card-subtitle {
+    font-size: 26px;
+}
+
+//h6 описание форм
+.section__info {
+    font-size: 24px;
+}
+
+//p1 списки
+.text20 {
+    font-size: 20px;
+}
+
+//p2 маил номер имя 1,3,4,5карточек, инфо в инфо-карточках "быстрая доставка"
+.text18 {
+    font-size: 18px;
+}
+
+//p3 имя 2 карточки
+.text16 {
+    font-size: 16px;
+}
+
+//p4 хэдер кнопка +позвони мне, 6   карточка, кнопка в карточках
+.text14 {
+    font-size: 14px;
+}
+
+//p5 кнопки в ограждениях
+.text13 {
+    font-size: 13px;
+}
+.text-bold {
+    font-weight: 700;
+}
+.text-semibold {
+    font-weight: 600;
+}
+.text-medium {
+    font-weight: 500;
+}
+.text-regular {
+    font-weight: 400;
+}
+.text-light {
+    font-weight: 300;
+}
+
+.wrapper {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas:
+        "header"
+        "content"
+        "footer";
+
+    & .header {
+        grid-area: header;
+    }
+
+    & .content {
+        grid-area: content;
+    }
+
+    & .footer {
+        grid-area: footer;
+    }
+}
+.container {
+    max-width: 1160px;
+    margin: 0 auto;
+}
+
+.consult-button {
+    padding: 15px;
+    background-color: #2C64F1;
+    border-radius: 10px;
+    overflow: hidden;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.15s ease-in;
+    white-space: nowrap;
+
+    &:hover {
+        background-color: #295ad8;
+    }
+}
